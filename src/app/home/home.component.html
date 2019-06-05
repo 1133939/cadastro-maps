@@ -1,0 +1,25 @@
+<h3>Onde está sua fazenda?</h3>
+
+<form [formGroup]="formCadastro" (ngSubmit)="cadastrarFazendeiro()">
+<div class="form-group"> 
+Seu nome:
+<input type="text" class="form-control" placeholder="Seu nome..." autocomplete="off"
+formControlName="nome">
+O que você produz? 
+<input type="text" class="form-control" placeholder="Seus produtos..." autocomplete="off"
+formControlName="produtos">
+Telefone  
+<input type="text" class="form-control" placeholder="Telefone..." autocomplete="off"
+formControlName="telefone">
+Telefone Whatsapp  
+<input type="text" class="form-control" placeholder="Whatsapp..." autocomplete="off"
+formControlName="whatsapp">
+Email 
+<input type="text" class="form-control" placeholder="Email..." autocomplete="off"
+formControlName="email">
+</div>
+<agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng" (mapClick)="placeMarker($event)">
+  <agm-marker  [latitude]="lat" [longitude]="lng"> </agm-marker>
+</agm-map>
+<button type="submit" class="btn btn-primary btn-lg btn-block">Cadastrar</button>
+</form>
