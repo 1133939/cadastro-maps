@@ -23,7 +23,7 @@ import { ROUTES } from './app.routes'
     HttpClientModule,
     RouterModule.forRoot(ROUTES),
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCb3zkRsHVUM2c_5rZ3G1Y1Qot3V0xQsuY'
+      apiKey: 'apikey'
     })
   ],
   providers: [],
